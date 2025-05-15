@@ -33,6 +33,10 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -41,17 +45,21 @@
     <input type="text" id="username" placeholder="帳號">
     <input type="password" id="password" placeholder="密碼">
     <button onclick="login()">登入</button>
+    <div class="message" id="message"></div>
   </div>
 
   <script>
     function login() {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
+      const message = document.getElementById('message');
 
       if (username === 'B1204217' && password === 'Aa123456') {
-        window.location.href = 'success.html'; // 登入成功跳轉
+        message.style.color = 'green';
+        message.textContent = '登入成功';
       } else {
-        window.location.href = 'failure.html'; // 登入失敗跳轉
+        message.style.color = 'red';
+        message.textContent = '登入失敗';
       }
     }
   </script>
