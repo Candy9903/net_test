@@ -2,66 +2,9 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>登入頁面</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .login-box {
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    input {
-      display: block;
-      margin: 10px auto;
-      padding: 8px;
-      width: 80%;
-    }
-    button {
-      padding: 8px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .message {
-      margin-top: 15px;
-      font-weight: bold;
-    }
-  </style>
+  <title>登入成功</title>
 </head>
 <body>
-  <div class="login-box">
-    <h2>登入</h2>
-    <input type="text" id="username" placeholder="帳號">
-    <input type="password" id="password" placeholder="密碼">
-    <button onclick="login()">登入</button>
-    <div class="message" id="message"></div>
-  </div>
-
-  <script>
-    function login() {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      const message = document.getElementById('message');
-
-      if (username === 'B1204217' && password === 'Aa123456') {
-        message.style.color = 'green';
-        message.textContent = '登入成功';
-      } else {
-        message.style.color = 'red';
-        message.textContent = '登入失敗';
-      }
-    }
-  </script>
+  <h1 style="color: green;">登入成功！歡迎進入系統。</h1>
 </body>
 </html>
